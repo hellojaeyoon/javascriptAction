@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Annotate PR
-        uses: hellojaeyoon/javascriptaction@v1.2
+        uses: ./dist/index.js
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
